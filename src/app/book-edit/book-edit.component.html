@@ -1,6 +1,6 @@
 <!-- mat-dialogue-title -->
 <div mat-dialogue-title>
-    <h2>Add book to cart</h2>
+    <h2>Edit book Information</h2>
 </div>
 
 <div mat-dialogue-title class="content">
@@ -16,10 +16,26 @@
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-            <mat-label>Number of book</mat-label>
+            <mat-label>book reference no</mat-label>
             <input matInput type="text" placeholder="Book Number">
         </mat-form-field>
     </div>
+
+    <div class="column">
+        <mat-form-field appearance="outline">
+          <mat-label>Book category</mat-label>
+          <mat-select>
+           
+              <mat-option *ngFor="let val of book_category" [value]="val">
+                {{val}}
+              </mat-option>
+        
+              <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}} -->
+           
+          </mat-select>
+        </mat-form-field>
+        </div>
 
     <!-- mat-dialogue-actions -->
 <div mat-dialogue-actions >

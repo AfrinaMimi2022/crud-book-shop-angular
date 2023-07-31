@@ -19,6 +19,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
 import { BookAddComponent } from './book-add/book-add.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { BookEditComponent } from './book-edit/book-edit.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

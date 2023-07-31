@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-emp-add-edit',
@@ -6,11 +7,45 @@ import { Component } from '@angular/core';
   styleUrls: ['./emp-add-edit.component.css']
 })
 export class EmpAddEditComponent {
+  empForm: FormGroup;
+
   education : string[]=[
     'SSC',
     'HSC',
     'BSc',
     'MSc',
-  ]
+  ];
 
+  constructor(private _fb: FormBuilder){
+    this.empForm = this._fb.group({
+      firstName:'',
+      lastName: '',
+      email: '',
+      dob: '',
+      gender: '',
+      education: '',
+      company: '',
+      experience: '',
+      package: '',
+    })
+  }
+  onFormSubmit(){
+    if(this.empForm.valid){
+      console.log(this.empForm.value);
+    }
+  }
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

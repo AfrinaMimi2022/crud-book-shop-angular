@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./book-edit.component.css']
 })
 export class BookEditComponent {
-
+  book_category : string[] = [
+    'Novel',
+    'Essay',
+    'Thriller', 
+    'poetry',
+    'Biography',
+  ]
+  
 }
