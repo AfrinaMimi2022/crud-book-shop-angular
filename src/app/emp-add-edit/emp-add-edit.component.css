@@ -1,0 +1,28 @@
+*{
+    padding: 10px 20px;
+}
+
+h2{
+    padding-top: 50px;
+}
+mat-form-field{
+    width: 100%;
+}
+.content{
+    padding: 2px;
+}
+.row{
+    display: flex;
+    gap:2px;
+}
+
+button{
+    margin-left: 20px;
+    /* margin-right: 10px; */
+}
+
+.btn{
+    text-align:right;
+}
+
+

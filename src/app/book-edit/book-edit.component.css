@@ -1,0 +1,22 @@
+*{
+    padding: 10px 20px;
+}
+mat-form-field{
+    width: 95%;
+}
+.content{
+    padding: 5px;
+}
+.column{
+    display: flex;
+    gap:10px;
+}
+
+button{
+    margin-left: 20px;
+}
+
+.btn{
+    text-align:right;
+}
+
