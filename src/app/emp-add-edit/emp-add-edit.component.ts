@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { EmployeeService } from '../services/employee.service';
 
 @Component({
   selector: 'app-emp-add-edit',
@@ -16,7 +17,8 @@ export class EmpAddEditComponent {
     'MSc',
   ];
 
-  constructor(private _fb: FormBuilder){
+  // inject the newly created service to constructor
+  constructor(private _fb: FormBuilder, private _empService: EmployeeService){
     this.empForm = this._fb.group({
       firstName:'',
       lastName: '',
